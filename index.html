@@ -1,7 +1,12 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="compute.js"></script>
 </head>
@@ -12,8 +17,8 @@
 
         <h1>iPhone Cost Breakdown</h1>
 
-        <label for="statelist">Select your state (average state and local sales tax rate is used).</label>
-        <select name="statelist" id="statelist" form="userInputs">
+        <label for="statelist">Select your state (average combined state and local sales tax rate is used)</label>
+        <select class="content" name="statelist" id="statelist" form="userInputs">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -68,27 +73,26 @@
         </select>
 
         <br>
-        <br>
 
         <form name="userInputs" id="userInputs">
 
-            <label for="phoneSalePrice">Selling an old phone? Enter the sale price here.</label>
+            <label for="phoneSalePrice">Selling an old phone? Enter the sale price here</label>
             <input id="phoneSalePrice" type="number" name="phoneSalePrice" class="inputField" placeholder="Sale price...">
 
             <br>
 
             <label for="keepDuration">How long, in months, will you keep the new phone for?</label>
-            <input id="keepDuration" type="number" name="keepDuration" class="inputField" placeholder="Number of months...">
+            <input id="keepDuration" type="number" name="keepDuration" class="inputField" placeholder="No. of months...">
 
             <br>
 
             <label for="useNumber">On average, how many times per day do you use or look at your phone?</label>
-            <input id="useNumber" type="number" name="useNumber" class="inputField" placeholder="Number of uses...">
+            <input id="useNumber" type="number" name="useNumber" class="inputField" placeholder="No. of uses...">
 
             <br>
 
             <label for="useDuration">On average, what is the total amount of time you spend on your phone per day?</label>
-            <input id="useDuration" type="number" name="useDuration" class="inputField" placeholder="Total time of uses...">
+            <input id="useDuration" type="number" name="useDuration" class="inputField" placeholder="No. of minutes...">
 
             <br>
             <br>
@@ -97,7 +101,7 @@
 
             <br>
             <br>
-
+            <br>
 
             <div id="results" style="color:#000000"></div>
 

@@ -135,7 +135,7 @@ function computeCosts(event) {
         effPricePerMinute[i], effPricePerUse[i]]
     }
 
-    var headers = ['Phone', 'Retail Price', 'Retail Price After Tax', 'Effective Price', 'Effective Price Per Month',
+    var headers = ['Model', 'Retail Price', 'Retail Price After Tax', 'Effective Price', 'Effective Price Per Month',
         'Effective Price Per Day', 'Effective Price Per Minute', 'Effective Price Per Use']
 
     // Generate table
