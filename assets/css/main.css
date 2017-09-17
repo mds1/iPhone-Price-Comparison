@@ -372,7 +372,8 @@
 		outline: 0;
 		padding: 0 1rem;
 		text-decoration: none;
-		width: 15%;
+		width: 	200px;
+		max-width: 80%;
 		margin:0 auto;
 		text-align-last: center;
 		height: 1.75rem;
